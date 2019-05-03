@@ -2,3 +2,5 @@ lab6.mpf
 /work
 *.bak
 scope.log
+vsim.wlf
+lab6.cr.mti
