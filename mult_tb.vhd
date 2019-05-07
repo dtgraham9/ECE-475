@@ -1,3 +1,6 @@
+----Graham Thompson
+----1169362
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
@@ -48,15 +51,22 @@ begin
             v:=(others => '0');
            w := w + "1";
         end loop;
+    end process;
+
+DATA2: process
+        variable I, J: integer;
+        variable w : unsigned(3 downto 0):= (others => '0');
+        variable v : unsigned(4 downto 0):= (others => '0');
+    begin
 
         for I in 0 to 15 loop
            for J in 0 to 31 loop
                 X_2 <= Std_logic_vector(w);
-                Y_2 <= Std_logic_vector(v2);
-                v2 := v2 + "1";
+                Y_2 <= Std_logic_vector(v);
+                v := v + "1";
                 wait for 25 ns;
            end loop;
-          v2:=(others => '0');
+          v:=(others => '0');
            w := w + "1";
        end loop;
     end process;

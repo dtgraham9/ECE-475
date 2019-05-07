@@ -1,3 +1,6 @@
+----Graham Thompson
+----1169362
+
 --------------OR2-----------------
 
 library ieee;
@@ -189,7 +192,6 @@ end package SumArray;
 
 library ieee;
 use ieee.std_logic_1164.all;
-library work; 
 use work.sumarray.all;
 entity fetching is
 	generic ( X_Len: integer := 4;
@@ -220,9 +222,6 @@ end;
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-package sumArray is
-	type sum_array is array(natural range <>, natural range <>) of std_logic;
-end package SumArray; 
 
 Library IEEE;
 use ieee.std_logic_1164.all;
